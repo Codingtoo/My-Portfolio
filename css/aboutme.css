@@ -1,0 +1,61 @@
+section:nth-child(2n){/*짝수 두번째 섹션영역에 배경색을 회색계열로*/
+    background-color: #f8f8f8;
+}
+section .title{
+    margin-bottom: 3rem;
+}
+
+section .title h4{
+    font-size: 1.35rem;
+    color: #ed4848;
+    position: relative;
+}
+section .title h2{
+    font-size: 3.5rem;
+}
+section .title p{
+    font-size: 1.15rem;
+}
+
+/*float속성 해제   이유:float속성은 적용대상의 원래 위치를 보장하지않기 때문에 */
+section .about-self::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/*본문너비절반지정 && 왼쪽 배치*/
+section .about-self .left{
+    width: 50%;
+    height: 100px;
+    float: left;/*왼쪽 배치*/
+    background-color: #ed4848;
+}
+/*이미지크기가 부모요소를 넘지 않도록 부모영역의 최대 크기로 지정*/
+/*section .about-self .left img{
+    max-width:100%;
+}*/
+
+/*본문너비절반지정 && 오른쪽 배치*/
+section .about-self .right{
+    width: 50%;
+    float: right;/*오른쪽 배치*/
+    padding: 0 2rem;
+    background-color: aqua;
+}
+section .about-self .right h3{
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+section .about-self .right h3 strong{
+    color: #ed4848;
+}
+section .about-self .right p{
+    font-size: 1.15rem;
+    margin: 1rem 0;
+}
+section .about-self .right .social a{
+    font-size: 2.5rem;
+    margin-right: 0.2rem;
+}
+
+

@@ -1,0 +1,9 @@
+/*common*/
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+section{
+    font-family: "Poppins", sans-serif;
+    padding: 5rem 0;
+}
